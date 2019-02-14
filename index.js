@@ -14,10 +14,11 @@ var destructivelyRemoveLastKitten = function() {
   return kittens;
 };
 var destructivelyRemoveFirstKitten = function() {
-  kittens.slice(1);
+  kittens.shift();
   return kittens;
 };
-var appendKitten = function() {
+var appendKitten = function(array) {
+  return kittens [...kittens, array];
 };
 var prependKitten = function( ) {
 };
